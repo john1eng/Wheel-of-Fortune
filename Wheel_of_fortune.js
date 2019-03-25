@@ -55,6 +55,11 @@ while( el.hasChildNodes() ){
 }
 
 }
+$(document).ready(function(){
+  $("#SPIN").css({"background-color":"yellow", "padding":"9px"});
+  });
+
+
 }
 
 
@@ -120,4 +125,13 @@ console.log(tries);
 }
 enterAct= false;
 spinAct = true;
+
+if(spinAct == true){
+  $(document).ready(function(){
+    $("#SPIN").css({"background-color":"yellow", "padding": "9px"});
+    $("#submitbut").css({"background-color":"buttonface", "padding": "1px 6px 1px 6px"});
+    });
+
+}
+
 }

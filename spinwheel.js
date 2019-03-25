@@ -1,8 +1,9 @@
-// $(document).ready(function(){
-//   $("#SPIN").click(function(){
-//     $("#WHEELIMG").animate({transform:'rotate(100deg)'},"slow")
-//   });
-// });
+$(document).ready(function(){
+  $("#SPIN").click(function(){
+    $("#WHEELIMG").css("transform","rotate(360deg)");
+  });
+});
+
 var WheelChoices = [25,50,50,75,75,100,100,100,100,125,150,175,200,200,200,
                     250,275,300,450,500,"Free Spin","Lose a turn","Buy a vowel","Bankrupt"]
 var score = 0;
@@ -46,11 +47,21 @@ if(WheelChoices[temp]=="Buy a vowel"){
   spinAct = false;
   enterAct = true;
 }
+
+if(spinAct == false){
+  $(document).ready(function(){
+    $("#SPIN").css({"background-color":"buttonface", "padding": "1px 6px 1px 6px"});
+    $("#submitbut").css({"background-color":"yellow", "padding": "9px"});
+    });
+
+}
+
 // console.log(temp);
 // console.log(WheelChoices[temp]);
 // console.log(score);
 
 // if(mark)
+
 
 } // to close off if statement
 }
