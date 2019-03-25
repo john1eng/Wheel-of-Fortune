@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wheel of Fortune</title>
+    <script src="Wheel_of_fortune.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="Wheel_of_fortune.css">
+    <script src="question&hint.js"></script>
+
+  </head>
+  <body onload="startGame()">
+    <div id="Title"> <!--title-->
+      <h1>WHEEL OF FORTUNE</h1>
+    </div>
+
+
+
+
+    <div id=testing>
+
+
+    </div>
+
+
+    <div id="WrdScreen">
+      <h2 id="WRD"><strong></strong></h2>
+      <h4 id="HINT"></h4>
+    </div>
+
+    <div id="Hint">
+    </div>
+
+    <div id="ChooseChr">
+      <input type="text" id="CHR"><br>
+      <button type="button" onclick="submitChr()">Submit</button>
+    </div>
+
+    <div id="Comment">
+      <h3 id="COM"><strong>Welcome to Wheel of Fortune<br>
+                  Please spin the wheel<strong></h3>
+    </div>
+
+    <div id="Score">
+      <p id="SCR">TOTAL</p>
+    </div>
+
+    <div id="Wheel">
+      <button id="SPIN" onclick="spin()">SPIN</button><br>
+      <p id="MRK">MARK</p>
+      <img src="spinwheel.jpg" id="WHEELIMG" width = 250px>
+
+    </div>
+    <script src="spinwheel.js"></script>
+
+
+    <div id="BtnSpin">
+    </div>
+
+    <div id="ChrChose">
+    </div>
+
+
+  </body>
+</html>
