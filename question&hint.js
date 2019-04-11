@@ -18,5 +18,9 @@ var list = [
     {
       question: "Day Light Saving",
       hint: "Spring"
+    },
+    {
+      question: "Wheel Of Fortune",
+      hint: "Game Show"
     }
   ]
